@@ -16,7 +16,11 @@ class Graph {
   }
 
   // this function accepts an array of Node instances and adds them to the nodes property on the graph
-  addVertices(vertexArray) {}
+  addVertices(vertexArray) {
+    for (let vertex of vertexArray) {
+      this.addVertex(vertex);
+    }
+  }
 
   // this function accepts two vertices and updates their adjacent values to include the other vertex
   addEdge(v1, v2) {}
